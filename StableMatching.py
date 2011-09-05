@@ -59,24 +59,7 @@ if __name__ == "__main__":
       print_preferences(females)      
       print_preferences(males)      
 
-    #Gale Shapley Stable Matching algorithm
-    #Initially all m E M and w E W are free
-    #While there is a man m who is free and hasn't proposed to every woman
-    #Choose such a man m
-    #Let W be the highest-ranked woman in m's preference list to whom m has not yet proposed
-    #If W is free then
-    #  (m, w) become engaged
-    #Else w is currently engaged to m'
-    #  If w prefers m' to m then
-    #    m remains free
-    #  Else w prefers m to mt
-    #    (m, w) become engaged
-    #  mt becomes free
-    #  Endif
-    #Endif
-    #Endwhile
-    #Return the set S of engaged pairs
-
+    #execute algorithm
     free_males = males 
     while len(free_males) > 0:
       man = free_males[0]
